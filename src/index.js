@@ -1,3 +1,5 @@
+/** HAS TO HAPPEN FIRST **/
+import 'dotenv/config';
 import express from 'express';
 import bodyParser from 'body-parser';
 import api from './api';
