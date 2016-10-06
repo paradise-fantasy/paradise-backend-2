@@ -7,6 +7,9 @@ kill -9 $pid
 # Wipe modules
 rm -rf node_modules
 
+# Write a message
+echo "Hey man" >> deploy.log
+
 # Install
 npm install
 npm run build
