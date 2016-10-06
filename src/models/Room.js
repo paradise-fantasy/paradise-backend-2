@@ -9,6 +9,6 @@ const Room = sequelize.define('rooms', {
   underscored: true
 });
 
-// Room.sync({ force: true });
+Room.sync({ force: true });
 
 export default Room;
