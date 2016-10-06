@@ -1,22 +1,22 @@
 #!/bin/bash
 
 # Kill node
-echo "Attempting to kill node"
+printf "\n\nAttempting to kill node\n\n"
 pid=$(ps aux | grep node | awk '{ print $2 }')
 kill -9 $pid
 
 # Wipe modules
-echo "Wiping modules"
+printf "\n\nWiping modules\n\n"
 rm -rf node_modules
 
 # Install
-echo "Installing project"
+printf "\n\nInstalling project\n\n"
 npm install
 
 # Build
-echo "Building project"
+printf "\n\nBuilding project\n\n"
 npm run build
 
 # Start
-echo "Starting the server"
+printf "\n\nStarting the server\n\n"
 npm start

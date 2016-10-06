@@ -10,7 +10,9 @@ const sequelize = new Sequelize(database, username, password, {
     max: 5,
     min: 0,
     idle: 10000
-  }
+  },
+
+  logging: false
 });
 
 export default sequelize;
