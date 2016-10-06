@@ -18,6 +18,6 @@ const User = sequelize.define('users', {
 User.belongsTo(Room, { as: 'home' });
 
 // Sync
-User.sync({ force: true });
+User.sync();
 
 export default User;

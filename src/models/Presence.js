@@ -23,6 +23,6 @@ Presence.belongsTo(User, { as: 'subject' });
 Presence.belongsTo(Room, { as: 'location' });
 
 // Sync
-Presence.sync({ force: true });
+Presence.sync();
 
 export default Presence;
